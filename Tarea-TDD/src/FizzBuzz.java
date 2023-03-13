@@ -1,21 +1,27 @@
 public class FizzBuzz {
-    int numero1;
-    int numero2;
-    int numeroTotal;
 
 
+    public String Comprobar(int numero){
 
-    public void Sumar(int numero1, int numero2){
+        String cadenadeTexto = "";
 
-        numeroTotal = numero1 + numero2;
+        if(numero < 0){
+            return "";
+        }
+
+        if(numero % 5 == 0 && numero % 3 == 0 ){
+            return cadenadeTexto = "FizzBuzz";
+        }
+        else if (numero % 5 == 0){
+             return cadenadeTexto = "Fizz";
+        }
+
+        else if (numero % 3 == 0){
+           return cadenadeTexto = "Buzz";
+        }
+
+        return cadenadeTexto;
     }
 
-    public int getNumeroTotal() {
-        return numeroTotal;
-    }
-
-    public void setNumeroTotal(int numeroTotal) {
-        this.numeroTotal = numeroTotal;
-    }
 
 }
