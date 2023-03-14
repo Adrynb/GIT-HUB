@@ -30,5 +30,11 @@ public class OperacionesTDDTest {
         int suma = operacion.sumarNumeros("1,1,2");
         assertEquals(4, suma);
 }
+    @Test
+    void TestDevuelveNegativo(){
+        OperacionesTDD operacion = new OperacionesTDD();
+        int suma = operacion.sumarNumeros("-1,2");
+        assertEquals(-1, suma);
+    }
 
 }

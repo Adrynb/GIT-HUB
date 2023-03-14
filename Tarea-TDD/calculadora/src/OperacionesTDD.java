@@ -7,6 +7,10 @@ public class OperacionesTDD {
         int suma = 0;
         String[] partesArray = cadena.split(",");
         for (String parte : partesArray) {
+            if(Integer.parseInt(parte) < 0){
+                System.out.println("Numero no permitido");
+                return -1;
+            }
             if (!parte.isEmpty()) {
                 suma += Integer.parseInt(parte);
             } else {
