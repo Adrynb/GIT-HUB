@@ -1,11 +1,10 @@
 import org.testng.annotations.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-class OperacionesTDDTest {
+public class OperacionesTDDTest {
 
     @Test
-    void TestDevuelve0(){
+    public void TestDevuelve0(){
         OperacionesTDD operacion = new OperacionesTDD();
         String suma = operacion.calc("");
 
@@ -29,4 +28,12 @@ class OperacionesTDDTest {
 
         assertEquals(3, sumatotal);
     }
+    @Test
+    void TestDevuelve4(){
+        OperacionesTDD operacion = new OperacionesTDD();
+        int sumatotal = operacion.calc2(1,1,2);
+
+        assertEquals(4, sumatotal);
+    }
+
 }
