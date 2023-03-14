@@ -12,4 +12,12 @@ public class OperacionesTDD {
         }
     }
 
+    public int calc (int suma1, int suma2){
+        if(suma1 < 0 || suma2 < 0){
+
+        }
+        return suma1 + suma2;
+
+    }
+
 }

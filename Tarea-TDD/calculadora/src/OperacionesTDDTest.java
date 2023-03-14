@@ -1,7 +1,6 @@
-import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OperacionesTDDTest {
 
@@ -20,5 +19,14 @@ class OperacionesTDDTest {
         String suma = operacion.calc("1");
 
        assertEquals("1", suma);
+    }
+
+    @Test
+    void TestDevuelve3(){
+        OperacionesTDD operacion = new OperacionesTDD();
+
+        int sumatotal = operacion.calc(2, 1);
+
+        assertEquals(3, sumatotal);
     }
 }
