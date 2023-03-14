@@ -37,4 +37,11 @@ public class OperacionesTDDTest {
         assertEquals(-1, suma);
     }
 
+    @Test
+    void TestDevuelve5SiEsMayorDe1000(){
+        OperacionesTDD operacion = new OperacionesTDD();
+        int suma = operacion.sumarNumeros("5,1002");
+        assertEquals(5, suma);
+    }
+
 }
