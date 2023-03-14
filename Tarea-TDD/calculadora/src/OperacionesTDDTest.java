@@ -17,4 +17,18 @@ public class OperacionesTDDTest {
         assertEquals("1", suma);
     }
 
+    @Test
+    void TestDevuelve3(){
+        OperacionesTDD operacion = new OperacionesTDD();
+        int suma = operacion.sumarNumeros("1,2");
+        assertEquals(3, suma);
+    }
+
+    @Test
+    void TestDevuelve4(){
+        OperacionesTDD operacion = new OperacionesTDD();
+        int suma = operacion.sumarNumeros("1,1,2");
+        assertEquals(4, suma);
+}
+
 }
